@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
 /*
-	Story by HTML5 UP
+	Personal website for publishing portfolio of Jorge Cebola Borbinha
+	https://jorgeborbinha.github.io 
+	Design based on Story by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -8601,3 +8603,39 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- */
+/* Custom styles for Project Images  */
+/* -- -- -- -- -- -- -- -- -- -- -- -- */
+
+.index .image img {
+	width: 100%;
+	height: auto;
+	display: block; /* Removes any extra space that can appear below an image */
+}
+
+/*
+ * Target each project image container individually.
+ * Set a 'max-width' to prevent the images from becoming too large on
+ * desktop screens, while still allowing them to shrink on smaller screens.
+ */
+
+/* Project 1*/
+.index section:nth-of-type(1) .image {
+	max-width: 700px;
+	margin-left: auto;  /* center the image container */
+	margin-right: auto;
+}
+
+/* Project 2*/
+.index section:nth-of-type(2) .image {
+	max-width: 150px; /* Image is floated right, just set max-width */
+}
+
+/* Project 3*/
+.index section:nth-of-type(3) .image {
+	/* Set a max-width to allow the image to scale properly. */
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
